@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/png" href="data:image/png;base64,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"
+      sizes="64x64"/>
+ <title>Online Shopping for Women, Men, Kids Fashion & Lifestyle - Amazon</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/utils.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/hoverform.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/payment.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Add a gray background color with some padding */
+    body {
+      font-family: Arial;
+      padding: 20px;
+      background: #f1f1f1;
+    }
+    
+    /* Header/Blog Title */
+    .header {
+      padding: 30px;
+      font-size: 40px;
+      text-align: center;
+      background: white;
+      background-image: url(../mintra/pexels_videos_2738\ \(1080p\).mp4);
+    }
+    
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {   
+      float: left;
+      width: 75%;
+    }
+    
+    /* Right column */
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      padding-left: 20px;
+    }
+    
+    /* Fake image */
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+    
+    /* Add a card effect for articles */
+    .card {
+       background-color: white;
+       padding: 20px;
+       margin-top: 20px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: flex;
+      clear: both;
+    }
+    
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+      margin-top: 20px;
+    }
+    
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+      }
+    }
+    </style>
+</head>
+
+<body>
+
+  <!--Navbar page start-->
+  <header class="containerHeader">
+    <nav class="flex space-between">
+      <div class="left flex items-center">
+        <a href="../mintra/index.html"><img src="../mintra/imagesvideo/amazon-web-services.png"/ style="background-color: #fff; width: 62px; height: 60px; padding: 6px;"></a>
+        <ul class="flex items-center justify-center uppercase semibold">
+          <a href="../mintra/hello.html" target="_blank">Men</a>
+          <a href="">Kids</a>
+          <a href="">Home & Living</a>
+          <a href="">Beauty</a>
+          <a href="">Studio</a>
+          <li class="nave__btn">
+            <a href="../form animation/index.html" class="button" target="blank">Sign Up</a>
+        </li>
+        </ul>
+      </div>
+
+      <div class="right flex items-center">
+        <a href=""></a><input class="search" placeholder="Search for products, brands and more" class="desktop-searchBar" value="" data-reactid="904">
+        <div class="rightBox">
+          <div class="wishlist mx-2"><a href="">All Products us</a></div>
+        <div class="profile mx-2"><a href="">Profile</a></div>
+        <div class="wishlist mx-2"><a href="../mintra/hello.html">WishList</a></div>
+        <div class="bag mx-2"><a href="">Bag</a></div>
+        <div class="wishlist mx-2"><a href="">Order Now</a></div>
+        <div class="wishlist mx-2"><a href="../mintra/contact.html">Contact Us</a></div> 
+          </div>
+      </div>
+    </nav>
+  </header>
+  <!--Navbar page closed-->
+
+<!--Home section-->
+<div class="header" style="background-image: url(../mintra/imagesvideo/sea-8002720_640.jpg);">
+  <!-- <video src="../mintra/pexels_videos_2738 (1080p).mp4" controls loop autoplay width="400px" height="300px" style="margin-top: 20px;"></video> -->
+  <h2>Apna Blog</h2>
+  <!-- <marquee>Online shopping </marquee> -->
+<marquee direction="left"><a href=""><a href=""></a><img src="" height="100"></marquee>
+<marquee direction="ri"><a href=".."><a href=""></a><img src="../mintra/imagesvideo/221941341_155160556886787_2727517692716861100_n.jpg" alt=""></a></marquee>
+
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg">
+        <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (10).jfif"/></a>
+         <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (14).jfif"/> </a>
+         <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (15).jfif"/></a>
+         <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (16).jfif"/></a>
+         <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (19).jfif"/></a>
+         <a href=""><img class="itemImg" src="../mintra/image/Products Us/images (15).jfif"/></a>
+         <a href=""><img class="itemImg" src="../mintra/image/Products Us/images (16).jfif"/></a>
+      </div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg">
+        <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (10).jfif"/></a>
+        <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (14).jfif"/> </a>
+        <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (15).jfif"/></a>
+        <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (16).jfif"/></a>
+        <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (19).jfif"/></a>
+        <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (19).jfif"/></a>
+        <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (19).jfif"/></a>
+        <a href=""><img class="itemImg" src="../mintra/image/Products Us/images (15).jfif"/></a>
+        <a href=""><img class="itemImg" src="../mintra/image/Products Us/images (16).jfif"/></a>
+      </div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg">
+         <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (10).jfif"/></a>
+         <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (14).jfif"/> </a>
+         <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (15).jfif"/></a>
+         <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (16).jfif/></a>
+         <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (19).jfif"/></a>
+         <a href=""><img class="itemImg" src="../mintra/image/Products Us/images (15).jfif"/></a>
+         <a href=""><img class="itemImg" src="../mintra/image/Products Us/images (16).jfif"/></a>
+      </div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg">
+         <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (10).jfif"/></a>
+         <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (14).jfif"/> </a>
+         <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (15).jfif"/></a>
+         <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (16).jfif/></a>
+         <a href=""><img class="itemImg" src="../mintra/image/Products Us/download (19).jfif"/></a>
+         <a href=""><img class="itemImg" src="../mintra/image/Products Us/images (15).jfif"/></a>
+         <a href=""><img class="itemImg" src="../mintra/image/Products Us/images (16).jfif"/></a>
+      </div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+</div>
+<!--Home page closed-->
+
+<!--rightside pages section-->
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:270px;">
+        <a href=""><video src="../mintra/imagesvideo/pexels_videos_2738 (1080p).mp4" autoplay controls loop width="270px"></video></a>
+        <a href="../form animation/index.html" class="button" target="blank">Sign Up</a>
+      </div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">
+        <a href=""><video src="../mintra/imagesvideo/2032937355.mp4" autoplay controls loop width="270px"></video></a>
+        <a href="../form animation/index.html" class="button" target="blank">Buy Now</a>
+      </div><br>
+
+      <div class="fakeimg">
+        <a href=""><marquee behavior="" direction="up"><img src="../mintra/image/images (39).jfif" alt="" width="270px"></marquee></a>
+        <a href="../form animation/index.html" class="button" target="blank">Check now</a>
+      </div><br>
+
+      <div class="fakeimg">
+        <a href=""><marquee behavior="" direction="down"><img src="../mintra/image/images (39).jfif" alt="" width="270px"></marquee></a>
+        <a href="../form animation/index.html" class="button" target="blank">Click Now</a>
+      </div>
+
+      <div class="fakeimg">
+        <a href=""><marquee behavior="" direction="left"><img src="../mintra/image/images (39).jfif" alt="" width="270px"></marquee></a>
+        <a href="../form animation/index.html" class="button" target="blank">Click Now</a>
+      </div>
+
+      <div class="fakeimg">
+        <a href=""><marquee behavior="" direction="down"><img src="../mintra/image/images (39).jfif" alt="" width="270px"></marquee></a>
+        <a href="../form animation/index.html" class="button" target="blank">Click Now</a>
+      </div>
+
+      <div class="fakeimg">
+        <a href=""><video src="../mintra/imagesvideo/1851088332.mp4" autoplay controls loop width="270px"></video></a>
+        <a href="../form animation/index.html" class="button" target="blank">Order Now</a>
+      </div>
+    </div>
+
+    <!-- <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div> -->
+
+    <!-- <div class="card">
+      <div class="container2">
+        <div style="text-align:center;color: #000; ">
+            <h2>Contact Us</h2>
+            <p>Swing by for a cup of coffee, or leave us a message:</p>
+        </div>
+        <a href=""></a><iframe src="../mintra/FOLLOW_👉@rk_1writes_👈👇ISLAMIC_QUOTES�🛀�.._�_@�rk_1writes_�.#�islamicreminders_#ajmalrazaqadri_#instagood_#ummatiofprophetmuhammadﷺ_#expl…__.mp4" frameborder="0"><Video></Video></iframe>
+    </div>
+    </div> -->
+  </div>
+<!--right side cection closed-->
+
+  <div class="card">
+    <!--forms-->
+    <div class="container2">
+      <div style="text-align:center;color: #000; ">
+          <h2>Contact Us</h2>
+          <p>Swing by for a cup of coffee, or leave us a message:</p>
+      </div>
+      <a href=""><img src="../mintra/image/burger.jpg" alt="" srcset="" style="margin-right: 10px; margin-bottom: 20px;"></a>
+      <a href=""><img src="../mintra/image/burger.jpg" alt="" srcset="" style="margin-left: 10px; margin-bottom: 20px;"></a>
+      <a href=""><img src="../mintra/image/burger.jpg" alt="" srcset="" style="margin-left: 15px; margin-bottom: 20px;"></a>
+      <a href=""><img src="../mintra/image/burger.jpg" alt="" srcset="" style="margin-left: 20px; margin-bottom: 20px;"></a>
+      <a href=""><img src="../mintra/image/burger.jpg" alt="" srcset="" style="margin-left: 20px; margin-bottom: 20px;"></a>
+      <a href="../form animation/index.html" class="button4" target="blank" style="margin-left: 70px;">Order Now</a>
+      <a href="../form animation/index.html" class="button4" target="blank" style="margin-left: 200px;">Order Now</a>
+      <a href="../form animation/index.html" class="button4" target="blank" style="margin-left: 190px;">Order Now</a>
+      <a href="../form animation/index.html" class="button4" target="blank" style="margin-left: 190px;">Order Now</a>
+      <a href="../form animation/index.html" class="button4" target="blank" style="margin-left: 190px;">Order Now</a>
+  </div>
+
+<!--start form-->
+  <div class="card" style="color: #ddd;">
+      <div class="container3">
+        <form action="/action_page.php">
+          <div class="row">
+            <h2 style="text-align:center">Login with Social Media or Manually</h2>
+            <!-- <div class="vl">
+              <span class="vl-innertext" style="color: #fff; text-align:center">or</span>
+            </div> -->
+      
+            <div class="col">
+              <a href="#" class="fb btn">
+                <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+               </a>
+              <a href="#" class="twitter btn">
+                <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+              </a>
+              <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                </i> Login with Google+
+              </a>
+              <a href="#" class="fb btn">
+                <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+               </a>
+              <a href="#" class="twitter btn">
+               <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+              </a>
+              <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                </i> Login with Google+
+              </a> 
+            </div>
+      
+            <div class="col">
+              <div class="hide-md-lg">
+                <p>Or sign in manually:</p>
+              </div>
+      
+              <a href=""></a><input type="text" name="username" placeholder="Username" required>
+              <a href=""></a><input type="password" name="password" placeholder="Password" required>
+              <a href=""></a><input type="submit" value="Login">
+
+              <div class="col">
+                <a href="#" style="color:white" class="btn1">Sign up</a>
+              </div>
+              <div class="col">
+                <a href="#" style="color:white" class="btn2">Forgot password?</a>
+              </div>
+            </div>
+            <!--close form-->
+          </div>
+        </form>
+      </div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+
+  
+  
+  <!--contact page start-->
+  
+
+<!--contact page closed-->
+
+<!--hover form-->
+<button class="open-button" onclick="openForm()">Open Form</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <a href=""></a><input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <a href=""></a><input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<!--hover form-->
+
+<!--footer page-->
+  <footer>
+    <div style="margin-top: 20px;">Copyright &copy; Amazon.com | All rights reserved</div>
+  </footer>
+
+<!--hover form js-->
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+<!--hover form closed js-->
+
+  <script src="script.js"></script>
+  <script text="text/javascript">
+    // confirm("Hi Welcome to SHOPPING Site");
+    // alert("Hi Kaiso Ho Bhai");
+    // prompt("Welcome to SHOPPING Site" , 'Thans for this website');
+    // console.log("Hi kaiso ho bhai aap ka kaam kaise chal raha hai");
+    // var Name = "Sameer khan";
+    // confirm('Hi'+' Hello Freinds '+ Name);
+    // document.write("<h1>Helo Friends</h1>");
+    // document.write("<p>Helo Friends</p>");
+  </script>
+</body>
+
+</html>
